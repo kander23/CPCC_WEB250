@@ -1,0 +1,136 @@
+/*
+Footer how to: http://matthewjamestaylor.com/blog/keeping-footers-at-the-bottom-of-the-page
+*/
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+   background: url("../images/hawaii.jpg") no-repeat center center fixed; 
+   background-size: cover;
+   overflow-x: hidden;
+}
+#container {
+   min-height:100%;
+   position:relative;
+}
+#header {
+   background: transparent;
+   padding:10px;
+}
+
+#header h1{
+color: #FFFFFF;
+font-weight: bold;
+font-size: 1.4em;
+min-width: 600px;
+text-align: center;
+text-shadow: 0.15em 0.15em 0.2em #000000;
+margin-left: -2500px;
+display:none;
+}
+
+#body {
+   padding:10px;
+   padding-bottom:60px;   /* Height of the footer */
+}
+
+#contract{
+display: none;
+margin-left: 2500px;
+}
+
+#contract div{
+margin-left: 15%;
+margin-right: 15%;
+background-color: transparent;
+min-width: 610px;
+}
+
+#contract ul{
+min-width: 600px;
+padding: 2% 2%;
+}
+
+#contract li{
+line-height: 1.2em;
+padding: 1% 0%;
+color: #FFFFFF;
+text-shadow: 0.15em 0.15em 0.2em #000000;
+}
+
+
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background: transparent;
+}
+
+#footer span.today_date{
+color: #FFFFFF;
+text-shadow: 0.15em 0.15em 0.2em #000000;
+padding-left: 2%;
+font-size: 1.2em;
+}
+
+#footer div.validate{
+float: right;
+padding: 0% 4%;
+}
+
+
+
+
+/*
+
+
+div.wrap{
+background: url("../images/hawaii.jpg") no-repeat center center fixed; 
+background-size: cover;
+position: fixed;
+width: 100%;
+height: 100%;
+z-index: 100;
+top: 0;
+left: 0;
+}
+
+h1, div.content{
+color: white;
+
+}
+
+div.content{
+position: relative;
+margin-left: auto; 
+margin-right: auto;
+width: 70%;
+}
+
+h1{
+font-weight: bold;
+font-size: 1.4em;
+width: 100%;
+min-width: 600px;
+text-align: center;
+text-shadow: 0.09em 0.09em #191919;
+}
+
+div.content{
+padding: 2% 5%;
+}
+
+div.content ul{
+min-width: 600px;
+}
+
+div.content li{
+line-height: 1.2em;
+padding: 1% 0%;
+}
+
+
+
+*/

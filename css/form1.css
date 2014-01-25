@@ -1,0 +1,109 @@
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+   background: url("../images/state_images/ohau-volcano-less.jpg") no-repeat center center fixed; 
+   background-size: cover;
+}
+#container {
+   min-height:100%;
+   position:relative;
+}
+#header {
+	width: 100%;
+   position: relative;
+   background:transparent;
+   padding:10px;
+
+}
+
+#header h2{
+ width: 60%;
+ min-width: 600px;
+ color: #000000;
+ height: 40px;
+ padding: 0% 1%;
+ margin-left: auto;
+ margin-right: auto;
+ font-weight: bold;
+ text-align: center;
+ font-size: 1.9em;
+ text-shadow: 0.1em 0.1em 0.25em #304E6A;
+}
+
+
+#body {
+   padding:10px;
+   padding-bottom:60px;   /* Height of the footer */
+}
+
+#body div.simpleform{
+height: 120px;
+padding: 1% 1%;
+width: 460px;
+}
+
+#body div.simpleform, #body div.result{
+background-color: #4B8EE7;
+min-height: 30px;
+border: 3px solid #858666;
+border-radius: 15px;
+margin-left: 3%;
+}
+
+#body div.simpleform label[for="fname"]{
+margin-right: 58px;
+}
+#body div.simpleform label[for="lname"]{
+margin-right: 59px;
+}
+#body div.simpleform label[for="states"]{
+margin-right: 13px;
+}
+#fname, #lname{
+width: 180px;
+}
+#states{
+width: 183px;
+padding-left: 6px;
+}
+
+#body div.simpleform div.line{
+margin-bottom: 4px;
+}
+
+#body div.simpleform div.line:nth-child(4){
+margin-top: 15px;
+width: 84.25%;
+}
+#body div.simpleform div.line:nth-child(4) input[type="submit"]{
+width: 100px;
+float: right;
+}
+
+#body div.result{
+padding: 1.25% 0% 1% 6%;
+width: 350px;
+}
+
+#body div.result span.thestateis{
+margin-left: 10px;
+
+}
+#body div.result span.user_name, #body div.result span.thestateis{
+text-shadow: 0.15em 0.15em 0.25em #FFFF85;
+}
+
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:transparent;
+}
+#footer div.validate{
+float: right;
+padding: 0% 4%;
+margin-top: 1%;
+}
