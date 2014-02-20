@@ -1,0 +1,14 @@
+#body div.palettes li {
+width: 80% !important;
+box-shadow: black 2px 2px 1px 2px;
+margin-bottom: 10px;
+}
+
+div.img_wrap{
+width: auto !important;
+height: auto !important;
+margin-top: 0px !important;
+}
+div.img_wrap img{
+width: 100%;
+}

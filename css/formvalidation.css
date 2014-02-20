@@ -1,0 +1,308 @@
+/**
+  generic footer styling
+  @link http://matthewjamestaylor.com/blog/keeping-footers-at-the-bottom-of-the-page
+*/
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+   background: url("../images/circuit_board_medium.jpg") no-repeat center center fixed; 
+   background-size: cover;
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 0.9em;
+}
+#container {
+   min-height:100%;
+   position:relative;
+}
+#header {
+   position: relative;
+   width: 100%;
+   background: transparent;
+   padding:10px;
+   padding-top: 1%;
+}
+#body {
+   position: relative;
+   padding:10px;
+   padding-bottom:60px;   /* Height of the footer */
+}
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background: transparent;
+}
+
+
+
+
+#header nav {
+width: 95%;
+margin-left: auto;
+margin-right: auto;
+}
+
+#header nav ul{
+min-width: 1150px;
+}
+
+#header nav li{
+display: inline-block;
+width: 180px;
+height: 34px;
+background-image: url("../images/sprites/button_sprites.png");
+background-position: 0px 0px;
+text-align: center;
+color: #FFFF66;
+text-shadow: 0.1em 0.15em 0.05em #134C0B;
+font-size: 1.1em;
+line-height: 30px;
+}
+
+
+#header nav li:hover{
+/* background-image: url("../images/sprites/button_sprites.png"); */
+background-position: 0px -35px;
+}
+
+#body section{
+border-radius: 15px;
+border: 2px solid #5EB930;
+padding: 1% 1%;
+text-shadow: 0.04em 0.08em 0.05em #66F366;
+background-color: #FFFFA3;
+min-height: 50px;
+}
+
+
+#body section h3{
+background-color: #5EB930;
+border: 0.1em solid #2A5124;
+border-radius: 15px;
+text-align: center;
+font-weight: bold;
+font-size: 1.4em;
+padding: 0.75% 0;
+}
+
+
+/* End footer code */
+
+#footer div.validate{
+float: right;
+padding: 0% 4%;
+margin-top: 1%;
+}
+
+#header h2, #body div.descr{
+
+min-width: 600px;
+margin-left: auto;
+margin-right: auto;
+background-color: #5EB930;
+border: 2px solid #FFFF66;
+border-radius: 15px;
+}
+
+#header h2{
+width: 70%;
+min-height: 40px;
+text-align: center;
+padding-top: 7px;
+color: #FFFF66;
+font-size: 1.6em;
+text-shadow: 0.1em 0.15em 0.05em #134C0B;
+}
+
+
+/*  brand.html specific styles */
+
+#body div.descr{
+width: 85%;
+min-width: 850px;
+min-height: 30%;
+padding: 1% 1%;
+font-size: 1.2em;
+}
+
+#body div.descr  a{
+text-decoration: none;
+}
+
+#body div.descr a:hover{
+color:	#ADD6FF;
+}
+
+
+
+
+#body div.palettes ul{
+list-style-type: none;
+margin: 35px 0px;
+}
+
+#body div.palettes li{
+width: 80%;
+min-width: 650px;
+background-color: #DCE166;
+border: 1px solid #FFFF66;
+border-radius: 20px;
+margin-bottom: 10px;
+padding: 0.5% 2%;
+box-shadow: black 2px 2px 1px 2px;
+}
+
+
+li a:link, li a:hover, li a:visited{
+color: #000000;
+text-shadow: #429C14 2px 2px 5px;
+}
+
+div.img_wrap{
+padding: 2px 2px;
+margin-left: 10%;
+margin-top: 2%;
+margin-bottom: 2%;
+}
+
+
+div.img_wrap img{
+width: 40%;
+margin-left: 2%;
+display: inline-block;
+margin-left: 10px;
+vertical-align: top;
+box-shadow: 4px 4px 6px #000000;
+border-radius: 12px;
+border: 2px solid #808080;
+}
+
+div.form_wrap{
+width: 100%;
+padding-left: 20px;
+padding-right: 20px;
+height: auto;
+display: inline-block;
+vertical-align: bottom;
+margin-top: 0px;;
+}
+
+#newuser{
+margin-left: 2%;
+margin-right: 50%;
+font-size: 0.9em;
+}
+
+#newuser fieldset{
+ min-width: 200px;
+ margin-bottom: 8px;
+ border-radius: 6px;
+ border: 1px solid #5EB930;
+ box-shadow: 2px 2px 3px #000000;
+}
+
+#newuser fieldset legend{
+font-weight: bold;
+font-size: 1.2em;
+}
+
+#newuser fieldset input{
+border-radius: 4px;
+border: 1px solid #333333;
+box-shadow: 2px 2px 3px #000000;
+padding-left: 6px;
+padding-right: 6px;
+}
+
+#newuser fieldset div.line, div.results div.line{
+margin-bottom: 6px;
+}
+
+#newuser fieldset:first-child{
+width: 400px;
+}
+
+#newuser fieldset:first-child div.line input {
+width: 200px;
+}
+#newuser fieldset:first-child div.phone input[name="phone"]{
+width: 200px;
+}
+#newuser fieldset:first-child div.phone span input:first-child{
+margin-left: 10%;
+margin-right: 5%;
+}
+
+#newuser fieldset:first-child div.phone input{
+width: 40px;
+}
+
+#newuser fieldset:first-child div.phone span{
+width: 100px; 	
+display: inline-block;
+margin-left: 4px;
+margin-top: 10px;
+}
+
+#newuser fieldset div.line label, div.results div.line label{
+min-width: 150px; 
+display: inline-block;
+}
+
+#newuser fieldset:nth-child(2){
+width: 450px;
+}
+ #newuser fieldset:nth-child(3){
+ width: 500px;
+}
+
+ #newuser fieldset:nth-child(3) label{
+ width: 160px;
+ }
+#newuser fieldset:nth-child(2) label{
+display: inline-block;
+width: 200px;
+}
+
+#newuser fieldset:nth-child(2) div.line{
+line-height: 20px;
+}
+
+#newuser fieldset:nth-child(2) div.line:nth-child(4) label{
+float: left;
+}
+
+#newuser fieldset:nth-child(2) div.line:nth-child(4) input{
+margin-top: 4px;
+}
+
+#newuser fieldset:nth-child(3) input[type="email"]{
+width: 300px;
+}
+#newuser fieldset:nth-child(3) input[type="date"]{
+width: 140px;
+}
+#newuser fieldset:nth-child(3) input[type="number"]{
+width: 140px;
+}
+#newuser div.line button, div.results input[type="button"]{
+border-radius: 2px;
+box-shadow: 2px 2px 3px #000000;
+padding: 4px 10px;
+margin-left: 40%;
+margin-bottom: 20px;
+margin-top: 20px;
+}
+
+#newuser div.line button:active, div.results input[type="button"]:active{
+margin-top: 22px;
+margin-bottom: 18px;
+}
+
+div.results div.line label {
+margin-right: 10px;
+font-weight: bold;
+}

@@ -1,0 +1,175 @@
+#container{
+background-color:#B3FF66;
+position: relative;
+}
+
+#header{
+position: relative;
+}
+
+#body {
+min-width: 700px;
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+}
+
+#body div.content h3{
+font-size: 1.3em;
+font-weight: bold;
+text-shadow: 0.08em 0.1em 0.05em #66F366;
+margin-bottom: 2px;
+}
+
+#body div.content hr{
+margin: 0;
+width: 250px;
+height: 1px;
+border: 1px solid #00EB00;
+}
+
+#body div.content p{
+margin: 6px 0px;
+}
+
+#header h2{
+width: 70%;
+min-width: 600px;
+min-height: 40px;
+text-align: center;
+padding-top: 7px;
+color: #00EB00;
+font-size: 1.8em;
+text-shadow: 0.08em 0.10em 0.05em #002F00;
+margin-right: auto;
+margin-left: auto;
+}
+
+#links, #body section{
+border: 4px solid #00EB00;
+padding: 1% 1%;
+text-shadow: 0.04em 0.08em 0.05em #66F366;
+background-color: #FFFFA3;
+}
+#links p{
+padding-left: 5%;
+height: 20px;
+margin: 4px;;
+}
+
+ #body section p.links{
+ height: 16px;
+ }
+
+#links a, #body section p.links a{
+text-decoration: none;
+font-size: 1.0em;
+line-height: 1.5em;
+}
+
+#links a:hover, #body section p.links a:hover{
+font-size: 1.2em;
+font-weight: bold;
+}
+
+#body section{
+margin: 2% 0;
+min-height: 50px;
+}
+
+form{
+padding: 1% 1%;
+border: 1px solid #005E00;
+display: inline-block;
+}
+
+form div.line{
+margin-bottom: 4px;
+width: 100%;
+}
+
+#basic_form label, #fizzbuzz_form label{
+display: inline-block;
+width: 110px;
+}
+
+form div.line input[type="submit"]{
+margin: 4px 0px 0px 0px;
+float: right;
+}
+
+#fizzbuzz_form input[type="number"], #basic_form input[type="number"]{
+width: 35px;
+}
+
+.error{
+background-color: #FF3333;
+}
+
+#basic p span{
+display: inline-block;
+width: 90px;
+margin-right: 4px;
+}
+
+#get_form, #post_form{
+min-width: 450px;
+}
+
+#get_form div.results a, #post_form div.results a{
+line-height: 14px;
+text-decoration: none;
+}
+
+#get_form div.results a:hover, #post_form div.results a:hover{
+font-weight: bold;
+}
+
+#get_form div.results span, #post_form div.results span{
+display: inline-block;
+width: 150px;
+margin-right: 10px;
+font-weight: bold;
+}
+
+#get_form div.results ul, #post_form div.results ul{
+margin-top: 4px;
+margin-bottom: 2px;
+}
+
+
+#get_form div.line:nth-child(-n+3) label, #post_form div.line:nth-child(-n+3) label{
+width: 100px;
+display: inline-block;
+}
+
+#get_form div.line:nth-child(4) label, #post_form div.line:nth-child(4) label{
+width: 180px;
+display: inline-block;
+}
+
+#get_form div.line:nth-child(4) select, #post_form div.line:nth-child(4) select{
+margin-top: 12px;
+vertical-align: top;
+}
+
+#body div.content form div.line ul{
+padding-left: 14px;
+margin-bottom: 0;
+margin-top: 4px;
+}
+
+#body div.content form div.line div.half{
+display: inline-block;
+width: 49%;
+}
+#body div.content form div.line div.right{
+float: right;
+width: 49%;
+}
+#body div.content form div.line textarea{
+resize: none;
+}
+
+
+

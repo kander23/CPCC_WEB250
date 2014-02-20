@@ -1,0 +1,106 @@
+#body{
+padding-left: 30px;
+}
+
+#body section.main{
+min-width: 600px;
+ margin-left: auto;
+ margin-right: auto;
+ width: 88%;
+}
+
+#body section div.left{
+ width: 49%;
+ display: inline-block;
+}
+
+#body section div.right{
+width: 49%;
+float: right;
+}
+
+#body section div.center{
+ margin-left: auto;
+ margin-right: auto;
+ min-width: 500px;
+ width: 75%;
+}
+
+#body section div.center p{
+padding: 0 2%;
+}
+
+
+#body section h4{
+position: relative;
+font-size: 1.2em;
+margin-left: 5%;
+margin-bottom: 5px;
+}
+
+#body section hr{
+margin: 0;
+width: 100%;
+height: 1px;
+border: 1px solid #00EB00;
+}
+
+#body section h4{
+font-size: 1.2em;
+margin-left: 5%;
+margin-bottom: 5px;
+font-weight: bold;
+}
+
+#body section div.output {
+margin-left: 40%;
+min-width: 250px;
+}
+
+#body section div.output ol{
+list-style-type: decimal;
+
+}
+
+#fizzbuzz{
+margin-top: 20px;
+}
+
+form{
+padding: 1% 1%;
+border: 1px solid #005E00;
+display: inline-block;
+}
+
+form div.line{
+margin-bottom: 4px;
+width: 100%;
+}
+
+form div.line input[type="submit"]{
+margin: 4px 0px 0px 0px;
+float: right;
+}
+
+#fizzbuzz_form input[type="number"], #basic_form input[type="number"]{
+width: 35px;
+}
+
+#basic_form label, #fizzbuzz_form label{
+display: inline-block;
+width: 110px;
+}
+ #body section p.links{
+ height: 16px;
+ }
+
+#body section p.links a{
+text-decoration: none;
+font-size: 1.0em;
+line-height: 1.5em;
+}
+
+#body section p.links a:hover{
+font-size: 1.2em;
+font-weight: bold;
+}

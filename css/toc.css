@@ -1,0 +1,153 @@
+
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+   background: url("../images/circuit_board_medium.jpg") no-repeat center center fixed; 
+   background-size: cover;
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 0.9em;
+}
+
+#container{
+position: relative;
+}
+
+#header{
+position: relative;
+}
+
+#body {
+min-width: 700px;
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+}
+
+#body div.content h3{
+font-size: 1.3em;
+font-weight: bold;
+text-shadow: 0.08em 0.1em 0.05em #66F366;
+margin-bottom: 2px;
+}
+
+#body div.content hr{
+margin: 0;
+width: 250px;
+height: 1px;
+border: 1px solid #00EB00;
+}
+
+#body div.content p{
+margin: 6px 0px;
+}
+
+#header h2{
+width: 70%;
+min-width: 600px;
+min-height: 40px;
+margin-left: auto;
+margin-right: auto;
+background-color: #5EB930;
+border: 2px solid #FFFF66;
+border-radius: 15px;
+text-align: center;
+padding-top: 7px;
+color: #FFFF66;
+font-size: 1.6em;
+text-shadow: 0.1em 0.15em 0.05em #134C0B;
+}
+
+#header nav {
+width: 95%;
+margin-left: auto;
+margin-right: auto;
+}
+
+#header nav ul{
+min-width: 1150px;
+}
+
+#header nav li{
+display: inline-block;
+width: 180px;
+height: 34px;
+background-image: url("../images/sprites/button_sprites.png");
+background-position: 0px 0px;
+text-align: center;
+color: #FFFF66;
+text-shadow: 0.1em 0.15em 0.05em #134C0B;
+font-size: 1.1em;
+line-height: 30px;
+}
+
+
+#header nav li:hover{
+/* background-image: url("../images/sprites/button_sprites.png"); */
+background-position: 0px -35px;
+}
+
+#body section{
+border-radius: 15px;
+border: 2px solid #5EB930;
+padding: 1% 1%;
+text-shadow: 0.04em 0.08em 0.05em #66F366;
+background-color: #FFFFA3;
+min-height: 50px;
+}
+div.links p{
+padding-left: 5%;
+height: 20px;
+margin: 4px;;
+}
+
+#body section p.links{
+ height: 16px;
+}
+
+div.links a, #body section p.links a{
+text-decoration: none;
+font-size: 1.0em;
+line-height: 1.5em;
+ margin-left: 10%;
+}
+
+span.indent{
+margin-left: 20%;
+}
+
+div.links p:nth-child(4){
+margin-bottom: 25px;
+}
+
+div.links a:hover, #body section p.links a:hover{
+font-size: 1.2em;
+font-weight: bold;
+}
+
+ #body section div.left{
+ width: 49%;
+ display: inline-block;
+ }
+
+#body section div.right{
+width: 49%;
+float: right;
+ }
+
+#body section h3{
+background-color: #5EB930;
+border: 0.1em solid #2A5124;
+border-radius: 15px;
+text-align: center;
+font-weight: bold;
+font-size: 1.4em;
+padding: 0.75% 0;
+}
+
+#body section h4{
+font-size: 1.2em;
+margin-left: 5%;
+margin-bottom: 5px;
+}

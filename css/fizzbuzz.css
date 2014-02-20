@@ -1,0 +1,41 @@
+#container{
+background-color:#B3FF66;
+}
+
+#header{
+position: relative;
+}
+
+#header h2{
+width: 70%;
+min-width: 600px;
+min-height: 40px;
+text-align: center;
+padding-top: 7px;
+color: #00EB00;
+font-size: 1.8em;
+text-shadow: 0.08em 0.10em 0.05em #002F00;
+margin-right: auto;
+margin-left: auto;
+}
+
+#body {
+padding: 1% 5%;
+}
+
+#body p, #body ul{
+border: 1px solid #00EB00;
+padding: 1% 1%;
+text-shadow: 0.04em 0.08em 0.05em #66F366;
+background-color: #FFFFA3;
+}
+
+#body p:first-child{
+text-align: center;
+}
+#body ul{
+max-width: 150px;
+padding-left: 30px;
+margin-left: auto;
+margin-right: auto;
+}

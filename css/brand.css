@@ -36,6 +36,59 @@ body {
    background: transparent;
 }
 
+
+
+
+#header nav {
+width: 95%;
+margin-left: auto;
+margin-right: auto;
+}
+
+#header nav ul{
+min-width: 1150px;
+}
+
+#header nav li{
+display: inline-block;
+width: 180px;
+height: 34px;
+background-image: url("../images/sprites/button_sprites.png");
+background-position: 0px 0px;
+text-align: center;
+color: #FFFF66;
+text-shadow: 0.1em 0.15em 0.05em #134C0B;
+font-size: 1.1em;
+line-height: 30px;
+}
+
+
+#header nav li:hover{
+/* background-image: url("../images/sprites/button_sprites.png"); */
+background-position: 0px -35px;
+}
+
+#body section{
+border-radius: 15px;
+border: 2px solid #5EB930;
+padding: 1% 1%;
+text-shadow: 0.04em 0.08em 0.05em #66F366;
+background-color: #FFFFA3;
+min-height: 50px;
+}
+
+
+#body section h3{
+background-color: #5EB930;
+border: 0.1em solid #2A5124;
+border-radius: 15px;
+text-align: center;
+font-weight: bold;
+font-size: 1.4em;
+padding: 0.75% 0;
+}
+
+
 /* End footer code */
 
 #footer div.validate{
@@ -63,6 +116,9 @@ color: #FFFF66;
 font-size: 1.6em;
 text-shadow: 0.1em 0.15em 0.05em #134C0B;
 }
+
+
+/*  brand.html specific styles */
 
 #body div.descr{
 width: 85%;
