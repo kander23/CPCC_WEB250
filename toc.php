@@ -76,7 +76,7 @@ $page = array(
 	'<div class="links">
 	    <p><a target="_blank" href="./phpintro.php">Intro. PHP (Lynda) Evidence - CH1</a></p>
 		<p><a target="_blank" href="./formvalidation_mod3.php">Form Validation with HTML5 (Lynda) Evidence</a></p>
-		<!--<p><a target="_blank" href="./fizzbuzzbang.php">FizzBuzzBang Variation</a></p>-->
+		<p><a target="_blank" href="./fizzbuzzbang_mod3.php">FizzBuzzBang - Branded</a></p>
 	 </div>',
 	'</div>',
 	'<div class="right">',

@@ -12,7 +12,7 @@ min-height: 40px;
 }
 
 div.greyout{
-position: absolute;
+position:fixed;
 z-index: 100;
 top: 0;
 left: 0;
@@ -24,7 +24,8 @@ filter:alpha(opacity=60); /* For IE8 and earlier */
 }
 
 div.getname{
-border-radius: 4px;
+position: relative;
+border-radius: 12px;
 min-height: 20px;
 width: 220px;
 box-shadow: black 2px 2px 1px 2px;
@@ -32,16 +33,129 @@ background-color: #DCE166;
 border: 1px solid #FFFF66;
 position: fixed;
 margin-left: -140px;
-top: 50%;
+top: 40%;
 left: 50%;
 z-index: 110;
-padding: 10px 50px 15px;
+padding: 10px 35px 35px 40px;
 }
 
 div.getname span{
 margin-left: 10px;
 }
-div.getname span input[type="button"]{
+div.getname span input[type="submit"]{
 width: 40px;
 font-weight: bold;
+}
+
+div.getname div.error{
+position: absolute;
+top: 55px;
+color: red;
+font-weight: bold;
+text-shadow: 1px 1px 3px black;
+margin-top: 5px;
+margin-left: 10px;
+}
+
+div.getname label{
+font-weight: bold;
+margin-bottom: 10px;
+margin-left: 4px;
+display: block;
+}
+
+div.fizzbuzzbang{
+position: relative;
+width: 100%;
+font-size: 0.9em;
+}
+
+h3{
+background-color: #5EB930;
+border: 0.1em solid #2A5124;
+border-radius: 15px;
+text-align: center;
+font-weight: bold;
+font-size: 1.4em;
+padding: 0.75% 0;
+}
+
+
+div.fizzbuzzbang fieldset {
+margin-top: 25px;
+margin-bottom: 25px;
+margin-left: auto;
+margin-right: auto;
+width: 350px;
+margin-bottom: 8px;
+border-radius: 6px;
+border: 1px solid #5EB930;
+box-shadow: 2px 2px 3px #000000;
+}
+
+div.fizzbuzzbang fieldset{
+padding: 15px;
+}
+
+div.fizzbuzzbang fieldset input {
+border-radius: 4px;
+border: 1px solid #333333;
+box-shadow: 2px 2px 3px #000000;
+padding-left: 6px;
+padding-right: 6px;
+margin-left: 10%;
+}
+
+div.fizzbuzzbang fieldset input[type="submit"]{
+margin-left: 75%;
+margin-top: 5px;
+margin-bottom: 2px;
+}
+
+div.fizzbuzzbang fieldset div.line{
+margin-bottom: 6px;
+}
+
+div.fizzbuzzbang fieldset div.line label{
+min-width: 100px;
+display: inline-block;
+text-align: left;
+font-weight: bold;
+}
+
+div.fizzbuzzbang fieldset input[type="submit"]:active{
+margin-top: 7px;
+margin-bottom: 0px;
+}
+
+.error{
+background-color: red;
+}
+
+div.links{
+margin-top: -8px;
+ height: 16px;
+ }
+ 
+div.links a:hover{
+font-size: 1.2em;
+font-weight: bold;
+color: blue !important;
+}
+
+div.fizzbuzzbang ol{
+margin-top: 20px;
+margin-left: 40%;
+margin-bottom: 20px;
+}
+
+div.fizzbuzzbang li{
+background-color: #FFFFA3;
+border: 2px solid #5EB930;
+border-radius: 5px;
+height: 18px;
+width: 120px;
+margin-bottom: 4px;
+box-shadow: 1px 1px 3px #000000;
+text-align: center;
 }
