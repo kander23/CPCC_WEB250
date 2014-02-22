@@ -27,13 +27,17 @@ $classesDir = array (
  
  
 
- 
+ $namebool = false;
 if (isset($_GET) && !empty($_GET)){
 
-
-$fizzBuzz = new FizzBuzz (array("fizzWord" => $_GET['fb_w1'], "buzzWord"=>$_GET['fb_w2'], "bangWord"=>$_GET['fb_w3'], "stepA"=>3, "stepB"=>5, "stepC"=>7, "count"=>$_GET['fb_mc'], "nonum"=> true ));
-echo base64_encode("<ol>".implode("", array_map(function($val){ return ("<li>$val</li>"); },$fizzBuzz->run()))."</ol>");
-die();
+	if (array_key_exists("name", $_GET)){
+		 $namebool = true;
+	}
+	else{
+		$fizzBuzz = new FizzBuzz (array("fizzWord" => $_GET['fb_w1'], "buzzWord"=>$_GET['fb_w2'], "bangWord"=>$_GET['fb_w3'], "stepA"=>3, "stepB"=>5, "stepC"=>7, "count"=>$_GET['fb_mc'], "nonum"=> true ));
+		echo base64_encode("<ol>".implode("", array_map(function($val){ return ("<li><span>$val</span></li>"); },$fizzBuzz->run()))."</ol>");
+		die();
+	}
 }
 
 ?>
@@ -97,7 +101,15 @@ die();
 		</div>
    
    </script>
-
+	<?php
+		if($namebool){
+			echo '<script type="text/javascript" >';
+			echo ' if (window.jQuery){';
+			echo '    $("body").data("username", "'.$_GET["name"].'");';
+			echo '  }';
+			echo ' </script>';
+		}
+	?>
    
    <script type="template/text" id="startfizzbang">
 		<div class="explain"><h3> Fizz Buzz Bang </h3>

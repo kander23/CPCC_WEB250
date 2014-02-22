@@ -20,7 +20,7 @@ height: 100%;
 width: 100%;
 background-color: #666666;
 opacity:0.6;
-filter:alpha(opacity=60); /* For IE8 and earlier */
+/*  filter:alpha(opacity=60); */ /* For IE8 and earlier */
 }
 
 div.getname{
@@ -145,8 +145,9 @@ color: blue !important;
 
 div.fizzbuzzbang ol{
 margin-top: 20px;
-margin-left: 40%;
+margin-left: 25%;
 margin-bottom: 20px;
+display: none;
 }
 
 div.fizzbuzzbang li{
@@ -154,8 +155,15 @@ background-color: #FFFFA3;
 border: 2px solid #5EB930;
 border-radius: 5px;
 height: 18px;
-width: 120px;
+width: 300px;
 margin-bottom: 4px;
 box-shadow: 1px 1px 3px #000000;
 text-align: center;
+}
+
+div.fizzbuzzbang li span{
+display: inline-block;
+min-width: 120px;
+padding-left: 10px;
+text-align: left;
 }

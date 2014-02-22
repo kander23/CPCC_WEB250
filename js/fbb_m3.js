@@ -3,6 +3,8 @@ $(document).ready(function(){
 	var userprompt = _.template($('#userprompt').html()), $nameFrm;
 	$('body').append(userprompt());
 	$nameFrm = $('body').find('.getname');
+
+		
 	$nameFrm.find('input[type="submit"]').on("click", function(){
 		var username = $(this).parents('div.getname').find('input[type="text"]').val();
 		if (($.trim(username)).length === 0){
@@ -26,13 +28,18 @@ $(document).ready(function(){
 					var $inputs = $fbbform.find('input:not([type="submit"])'), i , len;
 					var dataOk = false, cntr = 0;
 					for (i=0, len = $inputs.length; i < len; i++){
+					
+						var reg_ex = /^[\d]+$/;
 						if ($($inputs[i]).val().length === 0){
 							$($inputs[i]).addClass("error").data("hint", $($inputs[i]).attr("placeholder")).attr("placeholder","Missing Value").one("click", function(){
 								$(this).removeClass("error").attr("placeholder", $(this).data("hint"));
 							});
 							break;
 						}
-						else if ($($inputs[i]).attr("type") === "number" && (isNaN(parseInt($($inputs[i]).val(),10)) || (parseInt($($inputs[i]).val(),10)) <= 0 )){
+						else if ($($inputs[i]).attr("type") === "number" && (
+						(isNaN(parseInt($($inputs[i]).val(),10)) || (parseInt($($inputs[i]).val(),10)) <= 0 )
+						||  !reg_ex.test($($inputs[i]).val())
+						)){
 							$($inputs[i]).addClass("error").val("").data("hint", $($inputs[i]).attr("placeholder")).attr("placeholder","Invalid").one("click", function(){
 								$(this).removeClass("error").attr("placeholder", $(this).data("hint"));
 							});
@@ -49,9 +56,20 @@ $(document).ready(function(){
 					
 						var formdata = $fbbform.serialize();
 						$.ajax({'data':formdata}).done(function(data){
-							$fbbform.find('ol').remove();
-							$fbbform.append($(base64_decode(data))).after($('<div>').addClass('links').html('<a href="fizzbuzzbang_mod3.php">Clear</a>'));
-							
+							var $results = $fbbform.find('ol');
+						
+							if($results && $results.length){
+								$fbbform.parent().find('div.links').remove();
+								$results.slideUp("slow", function(){
+									$results.remove();
+									$fbbform.append($(base64_decode(data))).after($('<div>').addClass('links').html('<a href="fizzbuzzbang_mod3.php?name='+username+'">Clear</a>'));
+									$fbbform.find('ol').slideDown("slow");
+								});
+							}
+							else {
+								$fbbform.append($(base64_decode(data))).after($('<div>').addClass('links').html('<a href="fizzbuzzbang_mod3.php?name='+username+'">Clear</a>'));
+								$fbbform.find('ol').slideDown("slow");
+							}
 						});
 					}
 				 
@@ -61,7 +79,11 @@ $(document).ready(function(){
 		}
 	});
 	
-	
+	if ( $('body').data("username") && $('body').data("username").length){
+		
+		$nameFrm.find('#first_name').val($('body').data("username"));
+		$nameFrm.find('input[type="submit"]').trigger("click");
+	}
 
 	 
 	
