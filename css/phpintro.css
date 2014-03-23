@@ -1,7 +1,25 @@
-#body div.palettes li {
-width: 80% !important;
+#body div.palettes li ,#body div.palettes div.item{
 box-shadow: black 2px 2px 1px 2px;
 margin-bottom: 10px;
+}
+
+#body div.palettes li {
+width: 80% !important;
+}
+
+#body div.palettes div.item{
+width: 90% !important;
+margin-left: 2.5%;
+margin-top: 2.5%;
+margin-bottom: 2.5%;
+}
+
+#body div.palettes div.item div.dataTables_wrapper{
+margin-top: 1.25%;
+margin-bottom: 1.25%;
+border-radius: 4px;
+box-shadow: 4px 4px 8px #000000;
+min-width: 920px;
 }
 
 div.img_wrap{

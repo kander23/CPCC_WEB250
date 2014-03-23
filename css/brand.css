@@ -122,7 +122,7 @@ text-shadow: 0.1em 0.15em 0.05em #134C0B;
 
 #body div.descr{
 width: 85%;
-min-width: 850px;
+min-width: 1000px;
 min-height: 30%;
 padding: 1% 1%;
 font-size: 1.2em;
@@ -154,7 +154,7 @@ list-style-type: none;
 margin: 35px 0px;
 }
 
-#body div.palettes li{
+#body div.palettes li, #body div.palettes div.item{
 width: 61%;
 min-width: 650px;
 background-color: #DCE166;

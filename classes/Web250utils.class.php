@@ -61,7 +61,7 @@ class Web250Utils {
     }
 	
 	/**
-	  function to extract the contents of an array and out put it to the pageFeb54yhju7!
+	  function to extract the contents of an array and out put it to the page
 	  @method dumpArrayToPage
 	  @param {array} array of string to output to the page
 	*/

@@ -93,6 +93,10 @@ border: 1px solid #5EB930;
 box-shadow: 2px 2px 3px #000000;
 }
 
+div.fizzbuzzbang fieldset.wide{
+width: 600px;
+}
+
 div.fizzbuzzbang fieldset{
 padding: 15px;
 }
@@ -103,7 +107,7 @@ border: 1px solid #333333;
 box-shadow: 2px 2px 3px #000000;
 padding-left: 6px;
 padding-right: 6px;
-margin-left: 10%;
+margin-left: 38px;
 }
 
 div.fizzbuzzbang fieldset input[type="submit"]{
@@ -116,11 +120,27 @@ div.fizzbuzzbang fieldset div.line{
 margin-bottom: 6px;
 }
 
+div.fizzbuzzbang fieldset div.line.wide{
+padding-left: 58%;
+}
+
 div.fizzbuzzbang fieldset div.line label{
 min-width: 100px;
 display: inline-block;
 text-align: left;
 font-weight: bold;
+}
+
+
+div.fizzbuzzbang fieldset div.line span.wordcount{
+margin-left: 22px;
+}
+
+
+div.fizzbuzzbang fieldset div.line span.wordcount input{
+width: 40px;
+margin-left: 10px;
+margin-right: 10px;
 }
 
 div.fizzbuzzbang fieldset input[type="submit"]:active{

@@ -98,7 +98,7 @@ min-height: 50px;
 }
 div.links p{
 padding-left: 5%;
-height: 20px;
+line-height: 20px;
 margin: 4px;;
 }
 
@@ -117,12 +117,9 @@ span.indent{
 margin-left: 20%;
 }
 
-div.links p:nth-child(4){
-margin-bottom: 25px;
-}
 
 div.links a:hover, #body section p.links a:hover{
-font-size: 1.2em;
+font-size: 1.0em;
 font-weight: bold;
 }
 

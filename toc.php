@@ -78,6 +78,18 @@ $page = array(
 		<p><a target="_blank" href="./formvalidation_mod3.php">Form Validation with HTML5 (Lynda) Evidence</a></p>
 		<p><a target="_blank" href="./fizzbuzzbang_mod3.php">FizzBuzzBang - Branded</a></p>
 	 </div>',
+	 '<h4>Module 4: Introducing PHP</h4>',
+	'<div class="links">
+	   <p><a target="_blank" href="./fizzbuzzbang_mod4.php">FizzBuzzWhatever</a></p>
+	   <p><a target="_blank" href="./phpintro2.php">Introducing PHP - ch 3,4,5 Evidence</a></p>
+		<!--<p><a target="_blank" href="./fizzbuzzbang_mod3.php">FizzBuzzBang - Branded</a></p>-->
+	 </div>',
+	  '<h4>Module 5: phpMyAdmin</h4>',
+	'<div class="links">
+	   <p><a target="_blank" href="./phpmy.php">Up and Running with phpMyAdmin</a></p>
+	   <p><a target="_blank" href="./crud1.php"> Create&#47;Read out of CRUD</a></p>
+		 <!--<p><a target="_blank" href="./fizzbuzzbang_mod3.php">FizzBuzzBang - Branded</a></p>-->
+	 </div>',
 	'</div>',
 	'<div class="right">',
 	'<h3>Related Materials</h3>',
@@ -87,6 +99,7 @@ $page = array(
 		<p><a target="_blank" href="http://phpfiddle.org/">PHP Fiddle</a></p>
 		<p><a target="_blank" href="http://www.lynda.com/PHP-tutorials/Introducing-PHP/123485-2.html">Introducing PHP <br /><span class="indent">with David Powers on Lynda.com</span></a></p>
 		<p><a target="_blank" href="http://www.lynda.com/Developer-Databases-tutorials/Validating-Processing-Forms-JavaScript-PHP/120466-2.html">Validating & Processing Forms with JS & PHP <br /><span class="indent">with Ray Villalobos on Lynda.com</span></a></p>
+		<p><a target="_blank" href="http://www.lynda.com/phpMyAdmin-tutorials/Up-Running-phpMyAdmin/144202-2.html">Up and Running with phpMyAdmin <br /><span class="indent">with David Powers on Lynda.com</span></a></p>
 	 </div>',
 	'</div>',
 	'</section>'
